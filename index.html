@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Master the Market — 30-Day Stock Course</title>
+  <meta name="description" content="Learn practical stock-market skills: fundamentals, technicals, and live trades. 30 days to confident investing." />
+
+  <style>
+    /* Mobile-first, clean landing page for Instagram ad traffic (9:16 friendly) */
+    :root{--accent:#0066ff;--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#071027 0%, #071d2f 100%)}
+    .wrap{max-width:720px;margin:0 auto;padding:28px 20px;box-sizing:border-box}
+
+    .card{background:rgba(255,255,255,0.03);border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+
+    header{display:flex;align-items:center;gap:12px}
+    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#00b4ff);display:flex;align-items:center;justify-content:center;font-weight:700;color:white}
+    h1{font-size:26px;margin:8px 0 0}
+    p.lead{margin:6px 0 16px;color:var(--muted)}
+
+    .hero-image{height:380px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.03));display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;margin:12px 0}
+
+    .price-row{display:flex;align-items:center;justify-content:space-between;margin:12px 0}
+    .price{font-weight:800;font-size:22px}
+    .pill{background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    .btn{display:block;text-align:center;padding:14px 16px;border-radius:12px;background:var(--accent);color:white;font-weight:700;text-decoration:none;box-shadow:0 8px 24px rgba(2,6,23,0.6);}
+    .btn.secondary{background:transparent;border:1px solid rgba(255,255,255,0.08);color:#d9e9ff}
+
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+    .feature{background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;font-size:13px}
+
+    .testimonial{margin:12px 0;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{margin-top:18px;font-size:12px;color:var(--muted);text-align:center}
+
+    /* Desktop tweaks */
+    @media(min-width:900px){.wrap{padding:36px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="card">
+      <header>
+        <div class="logo">SM</div>
+        <div>
+          <h1>Master the Market — 30‑Day Stock Course</h1>
+          <p class="lead">Practical, proven steps to trade & invest confidently. No fluff — just results.</p>
+        </div>
+      </header>
+
+      <div class="hero-image">
+        <!-- Replace with a short looping video poster image for better conversion -->
+        <div style="text-align:center;padding:20px">
+          <strong style="display:block;font-size:18px">Launch your investing journey</strong>
+          <div class="small" style="margin-top:8px">Watch 10+ live trades, downloadable cheat-sheets & lifetime access</div>
+        </div>
+      </div>
+
+      <div class="price-row">
+        <div>
+          <div class="price">₹2,499 <span class="small" style="font-weight:600;color:var(--muted);font-size:12px">one-time</span></div>
+          <div class="small">Limited-time launch price</div>
+        </div>
+        <div style="min-width:120px;text-align:right">
+          <div class="pill">30-day plan</div>
+        </div>
+      </div>
+
+      <!-- BUY BUTTON: replace href with your payment link (Razorpay/Instamojo/Gumroad/PayPal) -->
+      <a id="buyBtn" class="btn" href="#buy" onclick="gotoPayment(event)">Buy Now — Instant Access</a>
+
+      <div style="margin-top:12px">
+        <div class="features">
+          <div class="feature"><strong>Live trade breakdowns</strong><div class="small">Learn entries, exits & risk</div></div>
+          <div class="feature"><strong>Cheat‑sheets</strong><div class="small">Templates you can reuse</div></div>
+          <div class="feature"><strong>Community</strong><div class="small">Private Telegram group</div></div>
+          <div class="feature"><strong>Money‑back</strong><div class="small">7‑day refund policy</div></div>
+        </div>
+      </div>
+
+      <div style="margin-top:8px">
+        <h3 style="margin:10px 0 6px">What you'll get</h3>
+        <ul class="small">
+          <li>Step-by-step modules (Basics → Strategy → Risk management)</li>
+          <li>10+ annotated trade videos</li>
+          <li>PDF cheat-sheets & watchlists</li>
+          <li>Lifetime access and updates</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:12px">
+        <div class="testimonial">
+          <strong>Ria P.</strong>
+          <div class="small" style="margin-top:6px">"I made my first consistent trade after week 2. The course is clear and hands-on."</div>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <h3 style="margin:10px 0 6px">FAQ</h3>
+        <div class="small"><strong>Is this beginner friendly?</strong> Yes — starts from basics. <br/><strong>How will I access the course?</strong> You get instant access link after payment.</div>
+      </div>
+
+      <div style="margin-top:14px;display:flex;gap:8px">
+        <a class="btn secondary" href="#learnmore" onclick="document.getElementById('learnmore').scrollIntoView({behavior:'smooth'})">Learn More</a>
+        <a class="btn" href="#buy" onclick="gotoPayment(event)">Buy Now</a>
+      </div>
+
+    </div>
+
+    <div id="learnmore" style="margin-top:16px" class="card">
+      <h3>How to access after payment</h3>
+      <p class="small">After successful payment you will be redirected to a secure page with the course dashboard OR receive an email with access instructions and downloadable material. You can host the course videos on Google Drive, Notion, Gumroad, or a simple password-protected page.</p>
+
+      <h3 style="margin-top:12px">Secure checkout options (free to set up)</h3>
+      <ul class="small">
+        <li><strong>Razorpay / Instamojo</strong> — create a payment link and paste it into the Buy button.</li>
+        <li><strong>Gumroad</strong> — host the product and use Gumroad link/embed.</li>
+        <li><strong>PayPal / Stripe</strong> — create buy now link or checkout session.</li>
+      </ul>
+
+      <h3 style="margin-top:12px">Free publish options</h3>
+      <ul class="small">
+        <li><strong>Netlify Drop</strong> — drag & drop this single HTML file to publish for free.</li>
+        <li><strong>GitHub Pages</strong> — push this file to a repo named <code>yourname.github.io</code>.</li>
+        <li><strong>Carrd</strong> — rebuild quickly with a visual editor if you prefer no-code.</li>
+      </ul>
+
+      <div style="margin-top:10px;display:flex;gap:8px">
+        <a class="btn secondary" href="https://carrd.co" target="_blank">Open Carrd</a>
+        <a class="btn secondary" href="https://netlify.com" target="_blank">Netlify Drop</a>
+      </div>
+
+      <footer>
+        <div class="small">© <span id="year"></span> Master the Market — Refund policy applies. Terms & Privacy apply.</div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script>
+    // Replace this variable with your actual payment link (Razorpay/Instamojo/Gumroad/PayPal)
+    const PAYMENT_LINK = "https://example.com/your-payment-link"; // <-- REPLACE THIS
+
+    function gotoPayment(e){
+      e.preventDefault();
+      if(!PAYMENT_LINK || PAYMENT_LINK.includes('example.com')){
+        // If you forgot to replace the link, show a quick friendly message
+        alert('Replace PAYMENT_LINK in the HTML with your actual payment URL (Razorpay/Instamojo/Gumroad/PayPal).');
+        return;
+      }
+      // open in new tab for better UX on Instagram browsers
+      window.open(PAYMENT_LINK, '_blank');
+    }
+
+    // small nicety
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
